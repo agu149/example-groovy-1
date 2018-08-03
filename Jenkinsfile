@@ -12,4 +12,5 @@ pipeline {
 	stage('Maven Validate') { steps { sh "mvn validate" }}
 	stage('Maven compile') { steps { sh "mvn compile" }}
 	stage('Maven Install') { steps { sh "mvn install" }}
+   }
 }
