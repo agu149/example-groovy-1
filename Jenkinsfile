@@ -5,8 +5,7 @@ pipeline {
   tools {
     maven "Maven-3.5.4"
   }
-  stages {
-    stage("Clean WS") { deleteDir() } 
+  stages { 
     stage("Checkout") { checkout scm }
 	stage('Maven Clean') { steps { sh "mvn clean" }}
 	stage('Maven Validate') { steps { sh "mvn validate" }}
