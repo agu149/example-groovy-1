@@ -6,7 +6,7 @@ pipeline {
     maven "Maven-3.5.4"
   }
   stages { 
-    stage("Checkout") { checkout scm }
+	  stage('Checkout') { steps { "checkout scm" }}
 	stage('Maven Clean') { steps { sh "mvn clean" }}
 	stage('Maven Validate') { steps { sh "mvn validate" }}
 	stage('Maven compile') { steps { sh "mvn compile" }}
