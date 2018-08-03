@@ -1,3 +1,5 @@
+package org.jacoco.examples.maven.groovy
+
 import groovy.util.GroovyTestSuite
 import junit.framework.Test
 import junit.textui.TestRunner
